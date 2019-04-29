@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Practice</title>
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+		  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+		  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="stylesheets/practice.css">
+		<link rel="stylesheet" href="stylesheets/modal.css">
+		<script src="scripts/practice.js"></script>
+		
+	</head>
+	<body>
+		<!-- NAVIGATION -->
+		<nav>
+			<div id="navLinks">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tab-1.html">More Tabs</a></li>
+					<li><a href="modal.html">Modal</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="carousel.html">Carousel</a></li>
+					<li><a href="flex.html">Flex</a></li>
+					
+					<button class="accordion">One Pagers</button>
+					<div class="panel">
+						<li><a href="">Rukia</a></li>
+						<li><a href="">Rukia</a></li>
+						<li><a href="">Rukia</a></li>
+						<li><a href="">Rukia</a></li>
+					</div>
+
+				</ul>
+			</div>
+			<div id="navBtnContainer">
+				<button id="navBtn" onclick="toggleNav()"><</button>
+			</div>
+		</nav>
+
+		<div class="content">
+			<div class="container">
+				<!-- Trigger the Modal -->
+				<img id="myImg" src="img/snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+					<!-- The Close Button -->
+					<span class="close">&times;</span>
+
+					<!-- Modal Content (The Image) -->
+					<img class="modal-content" id="img01">
+
+					<!-- Modal Caption (Image Text) -->
+					<div id="caption"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			accordion();
+		</script>
+		<script src="scripts/modal.js"></script>
+	</body>
+</html>

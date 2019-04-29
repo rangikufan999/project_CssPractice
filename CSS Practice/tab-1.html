@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Practice</title>
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+		  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+		  crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="stylesheets/practice.css">
+		<script src="scripts/practice.js"></script>
+	</head>
+	<body>
+		<!-- NAVIGATION -->
+		<nav>
+			<div id="navLinks">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="tab-1.html">More Tabs</a></li>
+					<li><a href="modal.html">Modal</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="carousel.html">Carousel</a></li>
+					<li><a href="flex.html">Flex</a></li>
+					
+					<button class="accordion">One Pagers</button>
+					<div class="panel">
+						<li><a href="">Rukia</a></li>
+						<li><a href="">Rukia</a></li>
+						<li><a href="">Rukia</a></li>
+						<li><a href="">Rukia</a></li>
+					</div>
+
+				</ul>
+			</div>
+			<div id="navBtnContainer">
+				<button id="navBtn" onclick="toggleNav()"><</button>
+			</div>
+		</nav>
+
+		<div class="content">
+			<div class="container">
+				<div id="London-3" class="tabcontent-3">
+				  <h1>London</h1>
+				  <p>London is the capital city of England.</p>
+				</div>
+
+				<div id="Paris-3" class="tabcontent-3">
+				  <h1>Paris</h1>
+				  <p>Paris is the capital of France.</p> 
+				</div>
+
+				<div id="Tokyo-3" class="tabcontent-3">
+				  <h1>Tokyo</h1>
+				  <p>Tokyo is the capital of Japan.</p>
+				</div>
+
+				<div id="Oslo-3" class="tabcontent-3">
+				  <h1>Oslo</h1>
+				  <p>Oslo is the capital of Norway.</p>
+				</div>
+				<div class="btnContainer">
+					<button class="tablink-3" onclick="openCityTab('London', this, '#e582a4', '-3')" id="defaultOpen">London</button>
+					<button class="tablink-3" onclick="openCityTab('Paris', this, '#e582a4', '-3')">Paris</button>
+					<button class="tablink-3" onclick="openCityTab('Tokyo', this, '#e582a4', '-3')">Tokyo</button>
+					<button class="tablink-3" onclick="openCityTab('Oslo', this, '#e582a4', '-3')">Oslo</button>
+				</div>
+				<div id="London-3_underTab" class="tabcontent-3_underTab">
+				  <span onclick="turnOffTab('-3')" class="topright">&times;</span>	
+				  <h1>London</h1>
+				  <p>London is the capital city of England.</p>
+				</div>
+
+				<div id="Paris-3_underTab" class="tabcontent-3_underTab">
+				  <span onclick="turnOffTab('-3')" class="topright">&times;</span>	
+				  <h1>Paris</h1>
+				  <p>Paris is the capital of France.</p> 
+				</div>
+
+				<div id="Tokyo-3_underTab" class="tabcontent-3_underTab">
+				  <span onclick="turnOffTab('-3')" class="topright">&times;</span>	
+				  <h1>Tokyo</h1>
+				  <p>Tokyo is the capital of Japan.</p>
+				</div>
+
+				<div id="Oslo-3_underTab" class="tabcontent-3_underTab">
+				  <span onclick="turnOffTab('-3')" class="topright">&times;</span>	
+				  <h1>Oslo</h1>
+				  <p>Oslo is the capital of Norway.</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			accordion();
+			document.getElementById("defaultOpen").click();
+		</script>
+	</body>
+</html>

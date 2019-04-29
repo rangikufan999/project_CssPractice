@@ -1,0 +1,285 @@
+body{
+	margin:0;
+	background-color:#fca4c1;
+}
+nav{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:fixed;
+	overflow:auto;
+	top:0;
+	left:0;
+	width:21%;
+	height:100%;
+	z-index:1;
+}
+
+nav::-webkit-scrollbar{
+	width:10px;
+}
+
+/* Track */
+nav::-webkit-scrollbar-track {
+  background: #e582a4;
+  border-radius:25px;
+}
+ 
+/* Handle */
+nav::-webkit-scrollbar-thumb {
+  background: #e05986;
+  border-radius:25px;
+}
+
+/* Handle on hover */
+nav::-webkit-scrollbar-thumb:hover {
+  background: pink; 
+}
+
+ul{
+	text-align:center;
+	padding:0;
+	width:auto;
+}
+
+li a{
+	display:block;
+	background-color:#e05986;
+	color:black;
+	text-decoration:none;
+	font-size:25px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+li a:hover{
+	background-color:#e582a4;
+	color:black;
+}
+
+#navBtn{
+	width:50px;
+	height:50px;
+	background-color:#e05986;
+	border:none;
+	color:black;
+	font-size:25px;
+	border-bottom-right-radius:25px;
+}
+
+#navBtn:hover{
+	background-color:#e582a4;
+	color:black;
+	cursor:pointer;
+}
+
+#navLinks{
+	display:inline-block;
+	vertical-align:top;
+	background-color:#e05986;
+	margin-left:0;
+	margin-right:0;
+	width:45%;
+	height:100%;
+}
+
+#navBtnContainer{
+	display:inline-block;
+	vertical-align:top;
+	position:fixed;
+	top:-1px;
+	height:100%;
+}
+
+/* Accordion Style */
+
+.accordion{
+	background-color:#e05986;
+	color:black;
+	cursor:pointer;
+	padding:18px;
+	width:100%;
+	border:none;
+	outline:none;
+	font-size:15px;
+	transition:0.4s;
+}
+
+.active, .accordion:hover{
+	background-color:#e582a4;
+}
+
+.accordion:after{
+	content: '\02C4';
+	color:black;
+	font-weight:bold;
+	float:right;
+	margin-left:5px;
+}
+
+.active:after{
+	content:'\02C5';
+}
+
+.panel{
+	background-color:black;
+	max-height:0;
+	overflow:hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel li{
+	list-style-type:none;
+	text-decoration:none;
+	width:100%;
+}
+
+.panel li a{
+	padding-left:30px;
+}
+
+.content{
+
+	width:70%;
+	margin:auto;
+	padding-top:50px;
+	height:100%;
+}
+
+.container{
+	width:70%;
+	margin:auto;
+	margin-bottom:15px !important;
+	margin-top:15px !important;
+	z-index:2;
+}
+
+/* Tab Content */
+
+.tab{
+	overflow:hidden;
+	border:1px solid #e05986;
+	background-color: #e05986;
+}
+
+.tab button{
+	background-color: #e05986;
+	float:left;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:14px 16px;
+	transition:0.3s;
+	font-size:17px;
+	color:black;
+}
+
+.tab button:hover{
+	background-color:#e582a4;
+	color:black;
+}
+
+.tab button.act{
+	background-color:#e582a4;
+}
+
+.tabcontent{
+	display:none;
+	background-color:#e582a4;
+	padding:6px 12px;
+	border:1px solid #e05986;
+	border-top:none;
+	color:black;
+}
+
+.topright{
+	float:right;
+	cursor:pointer;
+	font-size:28px;
+}
+
+.topright:hover{
+	color:red;
+}
+
+.tab-2{
+	float:left;
+	border:1px solid #e05986;
+	background-color: #e05986;
+	width:29%;
+	height:300px;
+}
+
+.tab-2 button{
+	display:block;
+	background-color:inherit;
+	color:black;
+	padding:22px 16px;
+	width:100%;
+	border:none;
+	outline:none;
+	text-align:left;
+	cursor:pointer;
+	transition:0.3s;
+}
+
+.tab-2 button:hover{
+	background-color:#e582a4;
+}
+
+.tab-2 button.act{
+	background-color:#e582a4;
+}
+
+.tabcontent-2{
+	float:left;
+	display:none;
+	padding:0 12px;
+	border:1px solid #e05986;
+	background-color:#e582a4;
+	color:black;
+	width:67.5%;
+	border-left:none;
+	height:300px;
+}
+
+.tablink-3{
+	background-color:#e05986;
+	color:black;
+	float:left;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:14px 16px;
+	font-size:17px;
+	width:25%;
+}
+
+.tablink-3:hover{
+	background-color:#e582a4;
+}
+
+.btnContainer{
+	border-left: 1px solid #e09586;
+	border-right: 1px solid #e09586;
+}
+
+.tabcontent-3{
+	color:black;
+	display:none;
+	padding:50px;
+	text-align:center;
+}
+
+.tabcontent-3_underTab{
+	display:none;
+	background-color:#e582a4;
+	padding:50px;
+	border:1px solid #e05986;
+}
+
+#London-3{background-color:#e05986;}
+#Paris-3{background-color:#e05986;}
+#Tokyo-3{background-color:#e05986;}
+#Oslo-3{background-color:#e05986;}
+
