@@ -58,12 +58,12 @@ function openCityTab(cityName, ele, color, id){
 
 	tablinks = document.getElementsByClassName("tablink" + id);
     for (i = 0; i < tablinks.length; i++) {
-    	tablinks[i].style.backgroundColor = "";
+    	tablinks[i].className = tablinks[i].className.replace(" act", "");
     }
 
     document.getElementById(cityName + id + "_underTab").style.display = "block";
     document.getElementById(cityName + id).style.display = "block";
-    ele.style.backgroundColor = color;
+    ele.className += " act";
 }
 
 function turnOff(id){
@@ -86,6 +86,6 @@ function turnOffTab(id){
 	}
 	tablinks = document.getElementsByClassName("tablink" + id);
 	for(i = 0;i<tablinks.length;i++){
-		tablinks[i].style.backgroundColor = "#e05986";
+		tablinks[i].className = tablinks[i].className.replace("act", "");
 	}
 }

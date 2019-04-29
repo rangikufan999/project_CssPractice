@@ -179,8 +179,8 @@ li a:hover{
 	color:black;
 }
 
-.tab button.act{
-	background-color:#e582a4;
+.tab button.act, .tab-2 button.act, .btnContainer button.act{
+	background-color:#e582a4 !important;
 }
 
 .tabcontent{
@@ -204,7 +204,6 @@ li a:hover{
 
 .tab-2{
 	float:left;
-	border:1px solid #e05986;
 	background-color: #e05986;
 	width:29%;
 	height:300px;
@@ -227,15 +226,10 @@ li a:hover{
 	background-color:#e582a4;
 }
 
-.tab-2 button.act{
-	background-color:#e582a4;
-}
-
 .tabcontent-2{
 	float:left;
 	display:none;
 	padding:0 12px;
-	border:1px solid #e05986;
 	background-color:#e582a4;
 	color:black;
 	width:67.5%;
@@ -275,7 +269,6 @@ li a:hover{
 	display:none;
 	background-color:#e582a4;
 	padding:50px;
-	border:1px solid #e05986;
 }
 
 #London-3{background-color:#e05986;}
