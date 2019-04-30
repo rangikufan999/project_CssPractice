@@ -13,6 +13,7 @@ function currentSlide(n){
 function showSlides(n){
 	var i;
 	var slides = document.getElementsByClassName("mySlides");
+	var slideInfoArr = document.getElementsByClassName("slideInfo");
 	var dots = document.getElementsByClassName("dot");
 	if(n > slides.length){slideIndex = 1}
 	if(n < 1){slideIndex = slides.length}
@@ -24,7 +25,15 @@ function showSlides(n){
 	for(i = 0;i<dots.length;i++){
 		dots[i].className = dots[i].className.replace(" act", "");
 	}
-	slides[slideIndex-1].style.display = "block";
+
+	for(i = 0;i<slideInfoArr.length;i++){
+		slideInfoArr[i].style.display = "none";
+	}
+	slides[slideIndex-1].style.display = "inline-block";
+	slides[slideIndex-1].style.verticalAlign = "top";
+
+	slideInfoArr[slideIndex-1].style.display = "inline-block";
+	slideInfoArr[slideIndex-1].style.verticalAlign = "top";
 	dots[slideIndex-1].className += " act";
 }
 
