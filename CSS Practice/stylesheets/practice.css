@@ -139,8 +139,7 @@ li a:hover{
 }
 
 .content{
-
-	width:70%;
+	width:80%;
 	margin:auto;
 	padding-top:50px;
 	height:100%;
@@ -152,6 +151,8 @@ li a:hover{
 	margin-bottom:15px !important;
 	margin-top:15px !important;
 	z-index:2;
+	border:1px solid black;
+	text-align:center;
 }
 
 /* Tab Content */
